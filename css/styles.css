@@ -1,0 +1,43 @@
+/* Контейнер галереї */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+/* Елементи галереї */
+.gallery-item {
+    flex-basis: calc((100% - 80px) / 3);
+    /* Наприклад, 5 зображень у рядку */
+    box-sizing: border-box;
+}
+
+.gallery-link {
+    display: block;
+    text-decoration: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Зображення галереї */
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Ефект при наведенні */
+.gallery-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
